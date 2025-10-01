@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arsath Rahman | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f7fa;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+
+    /* Hero Section */
+    header {
+      height: 100vh;
+      background: linear-gradient(rgba(29,53,87,0.8), rgba(29,53,87,0.8)), url('https://picsum.photos/1920/1080?blur') no-repeat center center/cover;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+    }
+    header h1 {
+      font-size: 3em;
+      margin: 10px 0;
+      animation: fadeInDown 1s ease-in-out;
+    }
+    header p {
+      font-size: 1.3em;
+      margin-bottom: 20px;
+      animation: fadeInUp 1.5s ease-in-out;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 10px;
+      border-radius: 30px;
+      background: #e63946;
+      color: white;
+      font-weight: bold;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .btn:hover {
+      background: #457b9d;
+      transform: translateY(-5px);
+    }
+
+    /* Sections */
+    section {
+      padding: 70px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 40px;
+      color: #1d3557;
+      position: relative;
+    }
+    section h2::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: #e63946;
+      margin: 10px auto 0;
+      border-radius: 2px;
+    }
+
+    /* Skills */
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .skill {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .skill:hover { transform: translateY(-5px); }
+
+    /* Cards */
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      margin: 20px 0;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-8px); }
+    .card h3 { color: #457b9d; margin-bottom: 10px; }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+    }
+    .contact a {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 25px;
+      border-radius: 30px;
+      background: #457b9d;
+      color: white;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+    .contact a:hover { background: #e63946; }
+
+    /* Footer */
+    footer {
+      background: #1d3557;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <h1>Hi, I'm Arsath Rahman</h1>
+    <p>Front-End Developer | React & React Native Enthusiast</p>
+    <a href="#about" class="btn">About Me</a>
+    <a href="#contact" class="btn">Hire Me</a>
+  </header>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align:center; max-width:800px; margin:auto;">
+      Passionate Front-End Developer skilled in HTML, CSS, Bootstrap, JavaScript, and frameworks like React.js & React Native.
+      Experienced in building responsive web and mobile apps, delivering engaging user experiences.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Bootstrap</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">React.js</div>
+      <div class="skill">React Native</div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience">
+    <h2>Experience</h2>
+    <div class="card">
+      <h3>Hermon Solution</h3>
+      <p>Front-End Developer (Oct 2024 – Present) | Chennai</p>
+    </div>
+    <div class="card">
+      <h3>Bright UI Technology</h3>
+      <p>Front-End Developer (Mar 2024 – Sep 2024) | Coimbatore</p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <h3>Klass Ride (Mobile App)</h3>
+      <p>React Native app with Firebase auth, Google Maps & secure payments.</p>
+    </div>
+    <div class="card">
+      <h3>Edison Awards (Mobile App)</h3>
+      <p>Voting app for award nominees, built with React Native.</p>
+    </div>
+    <div class="card">
+      <h3>Provet Pharma (Mobile App)</h3>
+      <p>Pharma app with dosage calculator & product linking for vets.</p>
+    </div>
+    <div class="card">
+      <h3>E-Commerce (Web App)</h3>
+      <p>React.js mobile sales store with sorting & inventory management.</p>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education">
+    <h2>Education</h2>
+    <div class="card">
+      <p>MCA – Annai College of Arts & Science (2021–2024)</p>
+      <p>BCA – Annai College of Arts & Science (2018–2021)</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="contact">
+      <a href="mailto:youremail@example.com">📧 Email</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">💼 LinkedIn</a>
+      <a href="https://github.com/yourgithub" target="_blank">💻 GitHub</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Arsath Rahman</p>
+  </footer>
+
+</body>
+</html>
+
